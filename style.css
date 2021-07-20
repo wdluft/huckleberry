@@ -10,3 +10,79 @@ body {
 }
 
 /* Add styles here! */
+:root {
+  /* Typography */
+  --small: 1rem;
+  --medium: 1.25rem;
+  --large: 1.5rem;
+  --xl: 2rem;
+
+  /* Colors */
+  --green: hsl(160deg, 100%, 30%);
+  --gold: hsl(45deg, 100%, 50%);
+  --darkGold: hsl(45deg, 100%, 40%);
+
+  --black: hsl(0deg, 0%, 0%);
+  --veryDarkGrey: hsl(0deg, 0%, 10%);
+  --darkGrey: hsl(0deg, 0%, 30%);
+  --mediumGrey: hsl(0deg, 0%, 40%);
+  --lightGrey: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+html {
+  font-size: 1.125em;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.max-width-wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  padding: 128px 32px 64px;
+}
+
+.intro-chunk h1 {
+  font-size: var(--large);
+  margin-bottom: 64px;
+}
+
+.intro-chunk p {
+  font-size: var(--medium);
+  margin-bottom: 16px;
+}
+
+strong {
+  color: var(--green);
+}
+
+main {
+  background-color: var(--lightGrey);
+  border-top: 8px solid var(--mediumGrey);
+  padding-top: 96px;
+}
+
+.card {
+  width: 100%;
+  background-color: var(--white);
+  padding-top: 8px;
+  padding-right: 32px;
+}
+
+.indented-heading {
+  background-color: var(--gold);
+  border-bottom: 8px solid var(--darkGold);
+  margin: 0;
+  font-size: var(--medium);
+  padding: 24px 0 24px 32px;
+}
+
+.card p {
+  display: none;
+}
