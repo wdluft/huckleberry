@@ -37,6 +37,7 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 .max-width-wrapper {
@@ -56,6 +57,7 @@ body {
 .intro-chunk p {
   font-size: var(--medium);
   margin-bottom: 16px;
+  letter-spacing: 0.5px;
 }
 
 strong {
@@ -73,6 +75,7 @@ main {
   background-color: var(--white);
   padding-top: 8px;
   padding-right: 32px;
+  padding-bottom: 16px;
 }
 
 .indented-heading {
@@ -85,4 +88,48 @@ main {
 
 .card p {
   display: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 575px) {
+  .intro-chunk {
+    padding: 64px 0 32px 16px;
+    max-width: 66%;
+  }
+
+  .intro-chunk h1 {
+    margin-bottom: 48px;
+  }
+
+  .intro-chunk p {
+    margin-bottom: 24px;
+    line-height: 1.25;
+    letter-spacing: initial;
+  }
+
+  main {
+    background-color: var(--lightGrey);
+    border-top: 8px solid var(--mediumGrey);
+    padding-top: 64px;
+    padding-bottom: 24px;
+  }
+
+  .card {
+    width: 100%;
+    padding-right: 16px;
+    border-bottom: 8px solid var(--mediumGrey);
+  }
+
+  .indented-heading {
+    margin: 0;
+    font-size: var(--medium);
+    padding: 16px 32px 16px 16px;
+    width: 68%;
+  }
+
+  .card p {
+    display: block;
+    padding: 16px 16px 0;
+    font-size: 1rem;
+  }
 }
