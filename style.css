@@ -38,11 +38,16 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   min-height: 100vh;
+  background-color: var(--lightGrey);
 }
 
 .max-width-wrapper {
   max-width: 768px;
   margin: 0 auto;
+}
+
+header {
+  background: var(--white);
 }
 
 .intro-chunk {
