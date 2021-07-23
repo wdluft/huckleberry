@@ -138,3 +138,15 @@ main {
     font-size: 1rem;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .intro-chunk {
+    max-width: 60%;
+  }
+
+  .indented-heading {
+    margin: 0 0 0 -16px;
+    padding: 16px 32px 16px 32px;
+    width: 55%;
+  }
+}
